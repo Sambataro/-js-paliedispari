@@ -10,6 +10,7 @@ var parolaUtente = prompt("inserisci una parola");
 // Creare una funzione per capire se la parola inserita è palindroma.
 function palindromo(){
 // come controllo se la parola è un palindromo?
+var fixCaratteriSpeciali = parolaUtente.replace(/[^A-Z0-9]/ig, "").toLowerCase();
 var controlloPalindromo = parolaUtente.split("").reverse().join("");
 
 // utilizzo il controllo
