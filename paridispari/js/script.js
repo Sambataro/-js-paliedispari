@@ -24,22 +24,25 @@ console.log(numeroComputer);
 var numeroFinale = numeroUtente + numeroComputer;
 console.log(numeroFinale);
 
+var esito = pariOdispari(numeroFinale);
+
 
 // stabilisco il vincitore
 function pariOdispari() {
 
   if(numeroFinale % 2 == 0) {
-    console.log("pari");
-}
-else {
-    console.log("dispari");
+   return "pari";
+   console.log("pari");
+} else {
+  return "dispari";
+  console.log("dispari");
 }
 }
 
 pariOdispari() ;
 
 // stampo il vincitore
-if (numeroFinale == pariDispari) {
+if (pariDispari == esito){
   console.log("hai vinto");
 } else {
   console.log("hai perso");
